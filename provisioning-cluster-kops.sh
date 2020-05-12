@@ -24,13 +24,13 @@ case $OPCAO in
 	--config) 
 		kops create cluster --cloud=aws --zones=us-east-1a,us-east-1b \
 		--master-size t2.micro --master-count 3 --node-size t2.large \
-		--node-count 2 clusterkube.cezaraugustoroggia.com.br
+		--node-count 2 clusterkubeflux.cezaraugustoroggia.com.br
 		exit 0
 		;;
 	--yes)
 		kops create cluster --cloud=aws --zones=us-east-1a,us-east-1b \
 		--master-size t2.micro --master-count 3 --node-size t2.large \
-		--node-count 2 clusterkube.cezaraugustoroggia.com.br --yes
+		--node-count 2 clusterkubeflux.cezaraugustoroggia.com.br --yes
 		exit 0
 		;;
 	    *) 
